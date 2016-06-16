@@ -1,0 +1,214 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{graphicx,url}
+%\usepackage[big,compact,sf]{titlesec}
+%\usepackage{sidecap}
+\usepackage{graphics,graphicx}
+%\usepackage{verbatim}
+%\usepackage{wrapfig}
+%\usepackage{floatflt}
+%\usepackage{times}
+%\usepackage{multicol}
+\usepackage{color}
+\newcommand{\red}{\textcolor{red}}
+
+%\usepackage{sober}
+%\usepackage[small,compact,sf]{titlesec}
+
+\newcounter{fred}
+
+\newcommand{\mic}{\mu{\rm m}}
+\def\es{\mathrel{\rm e^-/s}}
+\def\pix{\mathrel{\rm pix}}
+\def\elec{\mathrel{\rm e^-}}
+\def\kpc{\mathrel{\rm kpc}}
+\def\Gpc{\mathrel{\rm Gpc}}
+\def\Msol{\mathrel{\rm M_{\odot}}}
+\def\fsub{\mathrel{f_{\rm sub}}}
+\def\Mtot{\mathrel{M_{\rm tot}}}
+\def\ls{\mathrel{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$<$}}}}
+\def\gs{\mathrel{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$>$}}}}
+\def\Msolpyr{\mathrel{\rm M_{\odot}\,yr^{-1}}}
+\def\mas{\mathrel{\rm mas}}
+\def\pc{\mathrel{\rm pc}}
+\def\Ho{\mathrel{H_{\rm 0}}}
+\def\oM{\mathrel{\Omega_{\rm M}}}
+\def\oL{\mathrel{\Omega_{\rm \Lambda}}}
+\def\kms{\mathrel{\rm km\,s^{-1}}}
+\def\ms{\mathrel{\rm m\,s^{-1}}}
+\def\m{\mathrel{\rm m}}
+\def\nm{\mathrel{\rm nm}}
+\def\mm{\mathrel{\rm mm}}
+\def\cm{\mathrel{\rm cm}}
+\def\km{\mathrel{\rm km}}
+\def\um{\mathrel{\mu{\rm m}}}
+\def\ang{\mathrel{\rm \AA}}
+\def\Mpc{\mathrel{\rm Mpc}}
+\def\ksec{\mathrel{{\rm ksec}}}
+\def\mag{\mathrel{\rm mag}}
+\def\Gyr{\mathrel{\rm Gyr}}
+\def\Hz{\mathrel{\rm Hz}}
+\def\MHz{\mathrel{\rm MHz}}
+\def\GHz{\mathrel{\rm GHz}}
+\def\THz{\mathrel{\rm THz}}
+\def\PHz{\mathrel{\rm PHz}}
+\def\EHz{\mathrel{\rm EHz}}
+\def\Js{\mathrel{\rm Js}}
+\def\J{\mathrel{\rm J}}
+\def\W{\mathrel{\rm W}}
+\def\eVs{\mathrel{\rm eV\,s}}
+\def\eV{\mathrel{\rm eV}}
+\def\K{\mathrel{\rm K}}
+\def\Jy{\mathrel{\rm Jy}}
+\def\mJy{\mathrel{\rm mJy}}
+\def\uJy{\mathrel{\rm \mu Jy}}
+\def\sr{\mathrel{\rm sr}}
+\def\rad{\mathrel{\rm rad}}
+\def\deg{\mathrel{\rm deg}}
+\def\degsq{\mathrel{\rm deg}^2}
+\def\fwhm{\mathrel{\rm FWHM}}
+\def\fried{\mathrel{r_0}}
+\def\fo{\mathrel{f_{\rm o}}}
+\def\fe{\mathrel{f_{\rm e}}}
+\def\s{\mathrel{\rm s}}
+\def\dol{\mathrel{D_{\rm OL}}}
+\def\dos{\mathrel{D_{\rm OS}}}
+\def\dls{\mathrel{D_{\rm LS}}}
+
+
+\newcommand{\captionfonts}{\small}
+\makeatletter  % Allow the use of @ in command names
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{{\captionfonts #1: #2}}%
+  \ifdim \wd\@tempboxa >\hsize
+    {\captionfonts #1: #2\par}
+  \else
+    \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
+\makeatother   % Cancel the effect of \makeatletter
+
+
+\setlength{\textwidth}{172mm} 
+\setlength{\textheight}{260mm}
+\setlength{\topmargin}{-20mm} 
+\setlength{\oddsidemargin}{-5mm}
+\setlength{\evensidemargin}{10mm} 
+\setlength{\headheight}{5mm}
+\setlength{\headsep}{5mm} 
+\setlength{\hoffset}{0in}
+\setlength{\voffset}{0in}
+
+\parskip=2truemm                       % Paragraph spacing
+\parindent=4truemm                       % Paragraph indentation
+
+\begin{document}
+
+\pagestyle{myheadings}\markright{LSST:UK Galaxy Clusters White Paper 2016}
+
+\sloppy
+
+\pagestyle{empty}
+
+~\vspace{70mm}
+
+\centerline{\LARGE\bf LSST:UK Galaxy Clusters}
+\bigskip\bigskip\bigskip
+\centerline{\Large\bf High Level Science Interests and Science Requirements}
+\medskip
+\centerline{\Large\bf of the UK Galaxy Clusters Community}
+\medskip
+\centerline{\Large\bf as they relate to LSST}
+\bigskip\bigskip\bigskip
+\centerline{\Large\bf White Paper 2016}
+
+\vspace{90mm}
+
+\large
+\noindent{\bf Last updated}: June 16, 2016
+
+\noindent{\bf Contributors}: Graham P.\ Smith, et al. {\it [add your names here]}
+
+
+\newpage
+\pagestyle{myheadings}
+\setlength{\topmargin}{-10mm}
+\setlength{\textheight}{255mm}
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+{\it [Responsible: Graham Smith]}
+
+\noindent 
+The purpose of this document is to summarise and communicate the UK
+galaxy cluster community's interests as they relate to future
+exploitation of LSST.  Section 2 describes our interests and the high
+level requirements on the data.  Section 3 distils the common themes
+from our varied interests to form the basis for discussion with other
+communities within LSST, both within the UK and our colleagues in the
+US.
+
+The initial names attached to science interests in Section 2 is based
+on participation/discussion at the inaugural LSST:UK Clusters meeting
+on June 7, 2016.  However this document is open for anyone in the UK
+to join and contribute to.  The aim is to be succinct, so please stick
+to no more than one page per science interest in Section 2.
+
+\section{Science Interests}
+
+\subsection{Intracluster Light and low surface brightness emission}
+
+{\it [Responsible: Chris Collins]}
+
+\subsection{High redshift clusters and protoclusters}
+
+{\it [Responsible: Nina Hatch and Malcolm Bremer]}
+
+\subsection{Numerical simulations}
+
+{\it [Responsible: Ian McCarthy]}
+
+\subsection{Galaxy cluster mass calibration}
+
+{\it [Responsible: Graham Smith]}
+
+\subsection{Machine learning and cluster detection methods}
+
+{\it [Responsible: Jim Geach]}
+
+\subsection{Brightest cluster galaxies}
+
+{\it [Responsible: Alastair Edge]}
+
+\subsection{What else?}
+
+{\it [Responsible: Who else?]}
+
+\section{Common themes for discussion with the wider LSST community}
+
+\subsection{Combining LSST and Euclid data products}
+
+\subsection{Combining LSST data with the e-ROSITA cluster catalogues}
+
+\subsection{Requirements on numerical simulations}
+
+\subsection{Requirements on data quality including flat-fielding}
+
+\subsection{Synergies with other Working Groups and Science Collaborations}
+
+\subsubsection{Weak-lensing}
+
+\subsubsection{Strong-lensing}
+
+\subsubsection{Galaxies}
+
+\subsubsection{Others?}
+
+\section{Summary}
+
+
+\end{document}

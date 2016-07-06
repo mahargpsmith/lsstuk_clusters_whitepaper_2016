@@ -142,8 +142,11 @@
 
 \newpage
 
-\section{Introduction {\it [Responsible: Graham Smith]}}
+\section{Introduction}
 
+{\it [Responsible: Graham Smith]}
+
+\noindent
 The purpose of this document is to summarise and communicate the UK
 galaxy cluster community's interests as they relate to future
 exploitation of LSST.  Section 2 describes our interests and the high
@@ -202,8 +205,11 @@ The following sections outline the science interests of the UK's
 galaxy cluster community as they relate to LSST, highlighting the
 requirements that these interests place on LSST data.
 
-\subsection{Intracluster Light and low surface brightness emission {\it [Responsible: Chris Collins]}}
+\subsection{Intracluster Light and low surface brightness emission}
 
+{\it [Responsible: Chris Collins]}
+
+\noindent
 Understanding the build up of stellar mass at the centres of galaxy
 clusters is a key component to our understanding of galaxy
 evolution. The centres of rich clusters are dominated by Brightest
@@ -259,12 +265,80 @@ extract the maximum information on the faint cosmic light from
 ultra-deep LSST imaging at depths reaching $r \simeq 30-33$ per
 arcsec$^{-2}$.
 
-\subsection{High redshift clusters and protoclusters {\it [Responsible: Nina Hatch and Malcolm Bremer]}}
+\subsection{High redshift clusters and protoclusters}
 
-\subsection{Numerical simulations {\it [Responsible: Ian McCarthy]}}
+{\it [Responsible: Nina Hatch and Malcolm Bremer]}
 
-\subsection{Galaxy cluster mass calibration {\it [Responsible: Graham Smith]}}
+\noindent We will use the LSST survey and deep drilling fields to
+search for distant ($z >1$) clusters and protoclusters to study the
+formation of clusters and their member galaxies. Cluster and
+protocluster detection algorithms will concentrate on searching for
+galaxy overdensities in redshift space which exhibit strong
+Balmer/4000\AA break features over large areas ($\sim$
+10\,arcmin$^{-2}$). Based on recent studies (e.g. Chaing et al. 2014),
+(proto)cluster detection will require photometric redshifts with at
+least $\Delta z/ (1+z)\sim2.5$\% precision at $z>1$. This requires a
+strong synergy between Euclid and LSST data as the Euclid Y, J and H
+images are essential to span over the Balmer/4000\AA\ break for
+$z>1.5$ galaxies.
 
+The depth of the final LSST catalogues are sufficient to detect
+significant numbers of red galaxies within each (proto)cluster at
+redshifts up to $z\sim1.7$. Clusters and protoclusters up to
+$z\sim2.5$ can be detected in the deep drilling fields using similar
+algorithms, and these fields will produce cleaner cluster samples at
+$z<1.7$ due to their lower photometric redshift uncertainty.
+
+For protoclusters at $z>2.5$, the Balmer/$4000$\AA\ break shifts
+beyond the wavelength range of LSST and Euclid. Furthermore, the red
+sequences of such distant protoclusters are less prominent (perhaps
+non-existent). We therefore must use the Lyman break feature of
+galaxies to locate $z>2.5$ protoclusters.
+
+To locate protoclusters the images must be deep enough to robustly
+identify a galaxy overdensity across a few sq. arcmin. This requires
+us to detect at least $\sim2$ LBGs per sq. arcmin. To achieve this the
+filter redward of the Lyman break must reach depths of 26-27 mag (AB),
+and the filter blueward of the break must reach 27-28 mag [but more
+  detailed simulations are needed]. This means:\\
+\noindent $\bullet$~$z\sim3$ U-band dropouts will only be detected to
+sufficient depths in the deep drilling fields as the U-band in the
+main field survey is too shallow. \\
+\noindent $\bullet$ ~Dropouts in the g- and r-bands ($3.5<z<4.5$) will
+be detected to sufficient depths to locate protoclusters in the main
+survey. \\
+\noindent $\bullet$ ~The surface density of i- and z-band dropouts
+will be too low to robustly identify protoclusters in both main and
+deep drilling fields. [Although this is subject to change as the
+  depths of the deep fields are not certain at this stage]
+
+In summary, combining the LSST and Euclid surveys allows us to search
+for $1<z<1.7$ clusters and $3.5<z<4.5$ protoclusters across the main
+survey using photometric redshifts and Lyman break dropout
+techniques. The deep drilling fields allow us to search for $z>1.7$
+(proto)clusters using photometric redshifts, and $z\sim3$
+protoclusters using U-band dropouts. The main requirement for locating
+distant clusters and protoclusters is a good synergy between Euclid
+and LSST data products. We require accurate photometric catalogues
+based on Euclid detection images. The deep drilling fields are very
+important and infrared (3.6 and 4.5\,$\mu$m) coverage of these fields
+is highly desirable.
+
+In preparation for LSST data we should develop and test algorithms to
+locate distant clusters and protoclusters. Realistic simulated light
+cones would help test these algorithms. Such light comes need to be
+sufficiently large to contain significant numbers of high redshift
+clusters and protoclusters, and they would be most useful if the
+luminosity function of galaxies (at LSST and Euclid wavelengths)
+matched that of the local Universe and up to $z\sim4$.
+
+\subsection{Numerical simulations}
+
+\subsection{Galaxy cluster mass calibration}
+
+{\it [Responsible: Graham Smith]}
+
+\noindent
 Accurate absolute mass calibration of galaxy cluster samples out to
 $z\simeq1$ and down to $M_{200}\sim5\times10^{13}M_\odot$ is essential
 if clusters are to deliver a competitive constraint on dark energy.
@@ -362,12 +436,120 @@ depth already.  This field contains clusters across the required
 redshift and mass range.  The UK is well-placed to lead in this area
 given the leading roles that we play in LoCuSS and XXL.  
 
-\subsection{Machine learning and cluster detection methods {\it [Responsible: Jim Geach]}}
+\subsection{Machine learning and cluster detection methods}
 
-\subsection{Brightest cluster galaxies {\it [Responsible: Alastair Edge]}}
+{\it [Responsible: Jim Geach]}
+
+\subsection{Brightest Cluster Galaxies}
+
+{\it [Responsible: Alastair Edge]}
+
+\noindent
+The Brightest Cluster Galaxy (BCG) in a cluster is in most
+clusters substantially brighter than all other cluster
+members (by 1--1.5~mag) and found at the dynamical centre
+of the cluster at, or close to, the X-ray peak (Sanderson
+et al. 2009). These galaxies represent the most massive 
+stellar systems known and their properties can be used
+to constrain their formation history and how it relates
+to the evolution of their host cluster.
+
+Most BCGs are dominated by an old stellar population
+and share the same colour-magnitude sequence with the
+other early type galaxies in the cluster. However, there
+is a significant population of BCGs that exhibit recent
+star formation and/or an AGN core (Crawford et al. 1999).
+This subset of ``active'' BCGs are predominately found in
+the most X-ray luminous clusters (Green et al 2016) and
+have associated optical line emission and cold molecular
+gas (Edge 2001). The properties of the intracluster gas 
+surrounding the BCG appear to be the dominant factor
+in triggering this activity (Cavagnolo et al 2008) with
+a sharp threshold in central entropy marking the 
+point where $>$90\% of BCGs below show optical line emission 
+and $<$5\% of those above have lines. 
+
+Therefore, if it is possible to identify which BCGs are
+significantly bluer expected from the observed colours
+of the cluster population, we can very efficiently
+photometrically select these objects and compare
+their radio, MIR and X-ray properties to the 
+more passive BCGs. In the radio the average power
+of a BCG which exhibits optical line emission is
+an order of magnitude higher than that in non-line
+emitting systems (Hogan et al. 2015). 
+
+The depth and coverage of LSST, when combined
+with NIR and MIR data from Vista VHS and AllWISE,
+will be able to select these peculiar BCGs in
+any cluster within $z\sim 1.0$ and the more
+extreme examples out to $z>1.5$. The combination
+of multi-band photometry and multi-frequency
+radio data will allow us to determine if the 
+AGN and star-formation activity in BCGs evolves
+significantly over the majority of the lifetimes
+of all clusters.
+
+In addition to the photometric properties
+of BCGs, LSST will also provide important
+morphological information. For instance,
+N-body simulations suggest that the majority
+of the growth of BCGs is through the merger
+with other massive, early type galaxies 
+(De Lucia \& Bliazot 2007). Therefore a
+significant fraction of BCGs should have 
+the multiple nuclei expected for two 
+galaxies in the latter stages of these
+massive mergers. These systems are known
+but a significant fraction may be chance
+alignments given the very high surface density of galaxies
+in a cluster core. The quality and coverage of
+LSST will provide the statistics to assess
+the probabilty of chance alignment and the
+relative brightness of the components
+in a BCG to the likely merger rate of BCGs
+can be determined as a function of redshift
+and cluster mass.
+
+The LSST imaging will also identify BCGs
+with extended stellar envelopes,
+usually refered to as cD haloes,
+that extend on $\approx$100~kpc scales
+blending into what can be defined
+as Intracluster Light (see Chris's section?).
+This extended halo is often quite asymmetric
+and can contain shells and other evidence
+of merger activity. Again, the depth and
+consistency of the LSST data will allow us
+to determine the properties of these 
+extended haloes with other cluster properties
+over a wide range in redshift.
+
+Finally, a small fraction of BCGs contain a
+sufficiently bright active nucleus that
+variability can be detected. The most prominent
+example of this is NGC1275 in the Perseus cluster
+(Kingman \& O'Connell et al. 1979) which has shown 
+two episodes of strong AGN activity in the past
+50 years (Dutson et al. 2014). The optical
+variability is significant (0.2--0.4~mag on
+week to month timescales) so the LSST sensitivity
+and cadence is very well matched to search for 
+variability from difference imaging and raw
+photometry. The fraction of BCGs exhibiting 
+strong, variable AGN will set important
+constraints on the duty cycle of activity in 
+BCGs and the accretion rate relative to 
+the Eddington limit during these AGN outbursts.
+These factors are vital to establish how
+AGN activity drives the vast amounts of energy
+out into the surrounding intracluster gas
+through AGN feedback.
 
 
-\subsection{What else? {\it [Responsible: Who else?]}}
+
+\subsection{What else?}
+
 
 \section{Common themes for discussion with the wider LSST community}
 

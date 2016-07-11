@@ -92,13 +92,13 @@
 \makeatother   % Cancel the effect of \makeatletter
 
 
-\setlength{\textwidth}{172mm} 
+\setlength{\textwidth}{172mm}
 \setlength{\textheight}{260mm}
-\setlength{\topmargin}{-20mm} 
+\setlength{\topmargin}{-20mm}
 \setlength{\oddsidemargin}{-5mm}
-\setlength{\evensidemargin}{10mm} 
+\setlength{\evensidemargin}{10mm}
 \setlength{\headheight}{5mm}
-\setlength{\headsep}{5mm} 
+\setlength{\headsep}{5mm}
 \setlength{\hoffset}{0in}
 \setlength{\voffset}{0in}
 
@@ -349,6 +349,25 @@ this feedback affects these scaling relationship vary with redshift
 and give clear insight into the underlying astrophysics that jointly
 affects the evolution of clusters, their galaxy populations and an AGN
 they host.
+
+\red{BJM: are we still having a section on machine learning and
+  cluster detection? In this section we could say something along the
+  following lines (can hopefully be cleaned up by someone with more
+  expertise in machine learning stuff):}
+
+The most secure cluster identifications will come from sources with
+signals in several of the galaxy density, ICM and galaxy shear tracers
+of the cluster potential. The information from the different tracers
+form a huge but sparsely populated (**at least in some of the
+dimensions**) parameter space which can be exploited with suitably
+designed techniques (**machine learning etc**) to securely discover
+clusters at the limits of the mass and redshift parameter space.
+
+For this analysis, raw (photon count) X-ray data (plus calibration
+data - exposure maps, background maps, PSF models) will be required
+from XMM or eROSITA in order to preserve the Poisson statistics
+dominating in this low photon count regime. **Add similar constraints
+on SZ and LSST data.**
 
 \subsection{Detection of protoclusters at $z>1.5$}\label{sec:proto}
 
@@ -740,7 +759,7 @@ redshift clusters, and also Hyper-Suprime-CAM (HSC) survey data.  On
 this latter point, HSC has observed the XXL-N field to full survey
 depth already.  This field contains clusters across the required
 redshift and mass range.  The UK is well-placed to lead in this area
-given the leading roles that we play in LoCuSS and XXL.  
+given the leading roles that we play in LoCuSS and XXL.
 
 \red{GPS: I've pasted here a couple of paragraphs from Ben that can
   help to improve this section, however some might end up in the
@@ -749,15 +768,16 @@ given the leading roles that we play in LoCuSS and XXL.
 LSST will enable a diversity of mass measurements that can be tested
 and cross calibrated to yield the precision and control of systematics
 needed for cluster cosmology. Weak lensing masses from LSST will
-anchor the calibration of mass proxies based on LSST photometry and
-also those from complementary ICM surveys (both in X-rays and the SZ
-effect). In the new LSST discovery space of high-z clusters and galaxy
-groups at intermediate redshifts, stacking of the lensing, optical and
-ICM-based mass proxies will be tested and calibrated. Discrepancies in
-these regimes will yield new astrophysical insights. For example,
-evolution or mass dependency of the baryon fractions, galaxy
-demographics and ICM thermodynamic structure will all leave their
-traces on the respective mass proxies.
+anchor the calibration of relative mass proxies based on LSST
+photometry and also those from complementary ICM surveys, both in
+X-rays (XMM and eROSITA) and the SZ effect (SPTpol, ACTpol). In the
+new LSST discovery space of high-z clusters and galaxy groups at
+intermediate redshifts, stacking of the lensing, optical and ICM-based
+mass proxies will be tested and calibrated. Discrepancies in these
+regimes will yield new astrophysical insights. For example, evolution
+or mass dependency of the baryon fractions, galaxy demographics and
+ICM thermodynamic structure will all leave their traces on the
+respective mass proxies.
 
 Cluster cosmology is not the only motivation for reliable cluster mass
 determinations. The mass is the single defining property of cluster
@@ -782,6 +802,35 @@ and discovery potential are the highest.
   terminology of ``absolute mass calibration'' for WL-based mass
   measurements, and ``relative mass calibration'' for scaling relation
   studies.}
+
+In addition to providing relative mass calibration and cluster
+detections, the combination of LSST and ICM surveys will probe a new
+regime in cluster physics. The properties of the ICM in high mass, low
+redshift clusters are dictated by the gravitational potential in which
+it resides. However, hydrodynamical simulations demonstrate that
+stellar and AGN feedback leave a measurable imprint on the
+thermodynamics of the ICM in lower mass systems where the feedback
+energies are significant compared with the potentials, and at high
+redshift where the clusters are observed close to the epoch of peak
+feedback (e.g. Truong et al., 2016; LeBrun et al., 2016).
+
+Measuring these effects in ICM-selected clusters is hampered by the
+fact that cluster selection is highly influenced by the ICM state. ICM
+studies of LSST-selected clusters (either through lensing shear,
+galaxy overdensity or both) will not suffer from this complication. In
+X-rays, ICM properties would come from pointed observations from
+Chandra or XMM, or survey data from XMM and eROSITA. Meanwhile
+Sunyaev-Zel'dovich effect data will be available from sensitive
+surveys such as ACTpol and SPTpol. The most interesting constraints on
+ICM physics will come from the highest redshift and lowest mass
+systems where weak or null detections of the ICM will be the norm. A
+powerful probe will be the the X-ray luminosity function of LSST clusters
+and groups in this regime. This would necessitate access to raw
+eROSITA photon images (plus calibration products such as exposure
+maps, background maps and PSF models) in order to properly Poisson
+statistics of the sparse X-ray data when inferring X-ray fluxes and
+upper limits at the positions of LSST clusters.
+
 
 \subsection{Numerical simulations}\label{sec:sims}
 
@@ -815,7 +864,7 @@ requirements to discuss with LSST colleagues:
   (e.g.\ in Virgo), thick disk of edge-on galaxies, and intracluster
   light.  Key aspects of tests include the approach to flat-fielding
   and sky subtraction.  Tests on simulated data and on existing
-  LSST-like data that would both be instructive.  
+  LSST-like data that would both be instructive.
 \item\underline{Merged LSST and \emph{Euclid} photometry and shape
   catalogues
   (\S\S\ref{sec:proto},\ref{sec:clusdet},\ref{sec:mass})}\smallskip\\kjskajk

@@ -131,7 +131,7 @@
 \noindent{\bf Last updated}: July 8, 2016
 
 \noindent{\bf Contributors}: Malcolm Bremer, Chris Collins, Alastair
-Edge, Nina Hatch, Ben Maughan, Graham Smith (coordinator), et al. {\it
+Edge, Nina Hatch, Ben Maughan, Ian McCarthy, Graham Smith (coordinator), et al. {\it
   [add your name here]}
 
 
@@ -537,7 +537,7 @@ due to varying data quality.
 Our interest in using LSST data is to quantify the ICL as a function
 of cluster properties and redshift to at least $z~1.5$. The faint SB
 limits of LSST stacked data will provide powerful comparisons with the
-new generation high resolution galaxy simulations such as EAGLES which
+new generation high resolution galaxy simulations such as EAGLE which
 can make predictions at LSST depths. In order to achieve this it is
 important to optimise the sky background, flat fielding and PSF
 correction techniques on large angular scales for low surface
@@ -545,7 +545,7 @@ brightness emission. Here it is worth noting that LSST will detect the
 ICL in nearby clusters in the early exposures, involving detections
 out to at least 1 degree in the case of Virgo. Existing survey data do
 not provide sufficiently robust optimisation at low surface
-brightness. Recent work using KiDSS (Kelvin et al., 2016, in
+brightness. Recent work using KiDS (Kelvin et al., 2016, in
 preparation) indicates that the ICL cannot satisfactorily be measured
 using the current survey data release due to sky background estimation
 techniques optimised for galaxies. Scattered light also adds a
@@ -844,6 +844,15 @@ on LSST data are pretty trivial I think - just a catalogue.**
   still not clear to me where to put a section on simulations in this
   document, given that it has a different nature to the other
   subsections in section 2 -- comments welcome.}
+
+LSST will deliver high-quality data of many thousands of groups and clusters of galaxies.  Such large statistical samples can in principle be used to precisely pin down a number of fundamental cosmological parameters (e.g., using the evolution of the mass function and/or clustering of clusters) and will undoubtedly help us to better understand the process of galaxy formation and the role that environment plays in it.  However, the data by itself, as fantastic as it may be, will not allow us to achieve these goals.  We also require detailed theoretical models/simulations to make predictions for the properties of groups and clusters as a function of cosmological and astrophysical parameters.  Ideally, the models should be self-consistent, in the sense that the baryons and dark matter are evolved simultaneously (recent work from the OWLS and EAGLE projects have demonstrated that baryons cannot be neglected even on the scale of clusters).  Cosmological hydrodynamical simulations fulfill this basic requirement.  And by simulating the stars and gas self-consistently, this also gives us the opportunity to produce realistic synthetic observations of the simulations, which can be used to test observational analysis algorithms (e.g., mass estimation), to quantify the purity and completeness of group/cluster samples, and to make proper (like with like) comparisons between the simulations and the observations (which is a necessity when interpreting the data in any case).
+
+We have been developing a new large program of cosmological hydrodynamical simulations called BAHAMAS (BAryons and HAloes of MAssive Systems), which we believe could be very useful for the cosmological and astrophysical interpretation of LSST groups/clusters, and which could be use to produce realistic `mocks' for testing the group finders (for example) to be employed on the real data.  The strength of BAHAMAS is that it has been shown to reproduce an unprecedentedly wide range of observations of groups and clusters in the low-z Universe, including the various observed mappings between galaxies, hot gas, total mass, and black holes.  The BAHAMAS model (which adopts a calibration philosophy similar to EAGLE, although focused more on massive systems), has been run in a wide range of cosmologies.  For each run, we produce light cones of the gas, stars, and dark matter, which we use to produce synthetic galaxy surveys, weak lensing maps (cosmic shear and CMB lensing), and X-ray and SZ maps of the hot gas.
+
+We are happy to make these products available to the LSST: UK community to prepare for the coming influx of data and, eventually, to assist with their interpretation.  We have no specific requirements for the LSST data reduction etc.  However, input from the community into which simulation variables you would be interested in having, as well as specifications for the cosmologies and survey geometries of interest, would certainly be welcome.
+
+In terms of science, we are particularly interested to engage with observers in doing cross-correlation analysis of group/cluster samples (or just galaxy samples) with lensing, X-ray, and SZ surveys, to test the simulations on a variety of scales.   
+
 
 \section{Topics to discuss with the wider LSST community}
 

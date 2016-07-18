@@ -826,11 +826,7 @@ As discussed in \textsection \ref{sec:lsb}, a requirement of LSST is the recover
 
 The discovery space of LSST for galaxy evolution is huge, and relies on uniformly measured photometry free of systematics. In this respect, the occurrence of rare events within galaxies (e.g. AGN flaring, rapid shutdown of star formation) will be common enough to be well quantified. The lack of these `smoking guns' is severally lacking in current observational studies. 
 
-
-
-
-
-
+\newpage
 
 \section{Topics to discuss with the wider LSST community}
 
@@ -843,34 +839,85 @@ requirements to discuss with LSST colleagues:
 \item\underline{Low surface brightness emission
   (\S\ref{sec:lsb})}\smallskip\\Key questions: Will the currently
   envisaged observing strategy, standard data reduction pipeline, and
-  steps to mitigate scattered light at the telescope conserve low
+  steps to mitigate scattered light at the telescope, conserve low
   surface brightness emission on degree scales in the single visit
   fits frames and the stacked multiple-visit fits frames?  Tests are
   required to examine impact of LSST observing strategy, data
   reduction pipeline, and scattered light on ability to recover faint
   low surface brightness emission from ourskirts of local galaxies
-  (e.g.\ in Virgo), thick disk of edge-on galaxies, and intracluster
-  light.  Key aspects of tests include the approach to flat-fielding
-  and sky subtraction.  Tests on simulated data and on existing
-  LSST-like data that would both be instructive.
+  (e.g.\ in Virgo), thick disk of edge-on galaxies, intracluster
+  light, and low surface brightness features (e.g. tidal tails) of
+  cluster and group galaxies in crowded regions.  Key aspects of tests
+  include the approach to flat-fielding and sky subtraction.  Tests on
+  simulated data and on existing LSST-like data that would both be
+  instructive.
 
-\item\underline{Merged LSST and \emph{Euclid} photometry 
+\item\underline{Merged LSST and \emph{Euclid} photometry catalogues
+  (\S\S\ref{sec:proto},\ref{sec:clusdet},\ref{sec:mass})}\smallskip\\ Combining
+  \emph{Euclid} with LSST photometry is essential for the detection
+  and study of distant clusters and protoclusters, and we require
+  multiple combinations of the data to achieve our goals.  We require
+  photometric catalogues in LSST and Euclid bands based on object
+  detection in the reddest \emph{Euclid} image, or a combination of
+  all \emph{Euclid} images. These will be used to locate clusters and
+  protoclusters up to $z\sim2.5$ using photometric redshifts. Our
+  minimum requirement on the photometric redshift accuracy is $\Delta
+  z/(1+z)\sim2-3$\%, which is expected to be the standard level. To
+  identify protoclusters at $z>2.5$ using LBGs we require LSST and
+  \emph{Euclid} photometric catalogues based on LSST $g$-, $r$-, and
+  $i$-bands.
+
+\item\underline{Merged LSST and \emph{Euclid} faint galaxy shape
   catalogues
-  (\S\S\ref{sec:proto},\ref{sec:clusdet},\ref{sec:mass})}\smallskip\\
+  (\S\S\ref{sec:proto},\ref{sec:clusdet},\ref{sec:mass})}\smallskip\\It
+  is critical to ensure that faint galaxy shapes are measured from the
+  same pixels used for the detection of the galaxies, and that all
+  photometry is fully consistent and homogeneous.  This will be a big
+  scientific and computational (and likely political) challenge across
+  the huge LSST and \emph{Euclid} datasets.  Whilst key projects that
+  concentrate on the strengths of the respective surveys, it is also
+  important to construct detailed trade-off studies to pinpoint the
+  specific benefits of a merged shape/photometry/photo-z catalogue.
+  For example, which of space-based resolution down to 24th magnitude
+  (\emph{Euclid}) and ground-based resolution down to $\gs26$th
+  magnitude (LSST) gives the greater number density of usable lensed
+  galaxies?  How does the answer to this question evolve with cluster
+  redshift?  How do the answers to these questions map onto UK science
+  interests?
 
-Combining \emph{Euclid} with LSST photometry is essential for the detection and study of distant clusters and protoclusters, and we require multiple combinations of the data to achieve our goals.  We require photometric catalogues in LSST and Euclid bands based on object detection in the reddest \emph{Euclid} image, or a combination of all \emph{Euclid} images. These will be used to locate clusters and protoclusters up to $z\sim2.5$ using photometric redshifts. Our minimum requirement on the photometric redshift accuracy is $\Delta z/(1+z)\sim2-3$\%, which is expected to be the standard level. To identify protoclusters at $z>2.5$ using LBGs we require LSST and \emph{Euclid} photometric catalogues based on LSST $g-$, $r-$, and $i-$bands.
+\item\underline{X-ray ``follow-up'' of LSST clusters with
+  \emph{e-ROSITA} survey data (\S\S2.1, 2.5, 2.6)}\smallskip\\Discuss
+  with \emph{e-ROSITA} colleagues whether we can gain access to
+  \emph{e-ROSITA} photon, exposure, background maps and PSF models, to
+  use for individual and stacked validation of optical/IR clusters
+  from LSST?
 
-\item\underline{Merged LSST and \emph{Euclid} shape
-  catalogues
-  (\S\S\ref{sec:proto},\ref{sec:clusdet},\ref{sec:mass})}\smallskip\\ksjdksjd ksj dksj dk
+\item\underline{Lensing ``follow-up'' of \emph{e-ROSITA} clusters with
+  LSST survey data (\S\S2.1, 2.5, 2.6)}\smallskip\\Discuss with
+  \emph{e-ROSITA} possible joint projects.  Given that they expect to
+  release their cluster catalogue before LSST survey operations begin,
+  there might not be much to discuss.  However \emph{e-ROSITA}
+  observing strategy might influence location of LSST science
+  verification observations and/or deep drilling fields?
 
-\item\underline{Something about eROSITA synergy? (\S\S
-  XX)}\smallskip\\ksjdksjd ksj dksj dk
-\item\underline{Simulations to interpret LSST data 
-  (\S\S\ref{sec:proto})}\smallskip\\ 
-  To devise and test algorithms to detect distant clusters and protoclusters we require large light cones that enclose hundreds of massive clusters at high redshifts. These simulations should ideally match the observed luminosities of galaxies at LSST and \emph{Euclid} wavelengths, up to $z\sim4$.
- Such simulations are also required to interpret the LSST observations of galaxies overdensities in terms of clusters and protoclusters, and differentiate them from galaxy filaments. 
-\item
+\item\underline{Cluster-specific photometric redshift
+  algorithms}\smallskip\\Reliable photometric redshifts of cluster
+  galaxies requires careful inclusion of a prior based on the presence
+  of an overdensity along the line of sight in the spectral model
+  fitting.  It is also important to ensure that the spectral template
+  set includes galaxy types that are not found in ``field galaxy''
+  surveys.
+
+\item\underline{Simulations to interpret LSST data
+  (\S\S\ref{sec:proto})}\smallskip\\ To devise and test algorithms to
+  detect distant clusters and protoclusters we require large light
+  cones that enclose hundreds of massive clusters at high
+  redshifts. These simulations should ideally match the observed
+  luminosities of galaxies at LSST and \emph{Euclid} wavelengths, up
+  to $z\sim4$.  Such simulations are also required to interpret the
+  LSST observations of galaxies overdensities in terms of clusters and
+  protoclusters, and differentiate them from galaxy filaments.
+
 \end{itemize}
 
 %\subsection{Combining LSST and Euclid data products}
